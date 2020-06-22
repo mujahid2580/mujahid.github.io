@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href=css/style.css>
+</head>
+<body>
+
+<div class="background">
+  
+<div class="nav">
+    <a class="a"href="#">HOME</a>
+    <a class="b"href="#">ABOUT ME</a>
+    <a class="c"href="#">MY PROJECTS</a>
+    <a class="d"href="#">CONTACTS</a>
+</div>
+<div class="content">
+    <div class="home">
+        <h1>I am MUJAHID</h1>
+        <h3>Actively looking to bulid a carrer in Datascience</h3>
+    </div>
+
+    <div class="aboutme">
+        <p><h1>Hello,</h1><br>
+            <b>Welcome to my portfolio.</b><br>
+            <b><i>Iam B.Mujahidulla</i></b>,am a Job seeker planning and dreaming to build my career in DataScience living in Bangalore,India<br>
+            Iam a Graduate in Mechanical Engineering from Sir vishveshwariah institute of Science and Technology.<br>
+            Iam always be wise and hardworking on behalf of my work<br></p>
+        
+        <p><h1>Skills</h1><br>
+            .<b>Programming-language</b>: Python<br>
+            .<b>Libraries</b>: Numpy, Pandas, Matplot lib, scipy, Seaborn, Scikit-learn, Basics of plotty and folium<br>
+            .I have a good understanding at Datastructures, Data analysis,Data manipulation, Good at Handling missing values, Datamodeling<br>
+            .<b>Others</b>:Jupyter lab, Ms office, Microsoft azure notebook<br> </p>    
+        
+           <p> <h1><b>Strengths</b></h1><br>
+            .Iam a dependable person who is great at time management.<br>
+            .Iam always <i>energetic</i> and eager to learn new skills.<br>
+            .Iam always coming up with <i>innovative</i> ideas.<br></p>
+    </div>
+    <div class="myprojects">
+        <a href="https://github.com/mujahid2580/projects/tree/master/projects">
+            My Projects
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        // $('a').click(function(){
+        //     var selected = $(this);
+        // //     $('a').removeClass('active');
+        // //     $(selected).addClass('active'); 
+        // // });    
+        // // $('b').click(function(){
+        // //     var selected = $(this);
+        // //     $('b').removeClass('active');
+        // //     $(selected).addClass('active');
+        // });
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutme = $('.aboutme');
+        $myprojects= $('.myprojects')
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutme.fadeOut();
+            $myprojects.fadeOut();
+        });
+        $b.click(function(){
+            $aboutme.fadeIn();
+            $home.fadeOut();
+            $myprojects.fadeOut();
+        });
+        $c.click(function(){
+            $myprojects.fadeIn();
+            $aboutme.fadeOut();
+            $home.fadeOut();
+        });
+    });
+</script>
+</body>
+</html>
